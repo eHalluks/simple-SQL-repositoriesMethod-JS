@@ -1,0 +1,23 @@
+{
+  "name": "tododbjs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "moment": "^2.29.4",
+    "mysql2": "^3.2.0",
+    "nanoid": "^4.0.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "express.js": "^1.0.0"
+  }
+}

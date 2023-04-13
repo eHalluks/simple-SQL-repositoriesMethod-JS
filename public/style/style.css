@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+h1{
+    font-size: 45px;
+    font-family: "HP Simplified", sans-serif;
+    color: #3a004d;
+}
+
+.main-page-container{
+    display: grid;
+    grid-template-columns: 50%;
+    grid-template-rows: max-content;
+    grid-row-gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.main-header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.main-h1-container{
+    grid-column: 1;
+}
+.main-date-header-container{
+    display: flex;
+    justify-content: flex-end;
+    column-gap: 20px;
+    text-align: center;
+}
+
+.main-date-header-container div p:nth-child(1){
+    font-weight: bold;
+    color: #3a004d;
+}
+
+.master-todo-section{
+    display: grid;
+    grid-row-gap: 20px;
+}
+
+.main-form-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, max-content);
+    grid-row-gap: 20px;
+
+}
+
+.main-form-container label{
+    font-size: 18px;
+}
+.main-form-container input{
+    padding: 10px;
+    width: 50%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: "Segoe UI", sans-serif;
+    color: gray;
+}
+.main-form-container textarea{
+    resize: none;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Segoe UI", sans-serif;
+    color: gray;
+}
+.main-form-container textarea, input:focus{
+    outline: none;
+}
+
+.main-form-container button {
+    justify-items: center;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-family: "HP Simplified", sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #3a004d;
+    color: white;
+}
+.main-form-container button:hover{
+    background-color: #333333;
+}
+
+.order-number{
+    margin-right: 10px;
+    font-weight: bold;
+    color: #3a004d;
+}
+.main-form-container input, textarea{
+    display: flex;
+    margin-top: 10px;
+}
+
+.main-todoList{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.todos-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+details {
+    padding: 10px;
+    margin: 10px 0;
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    border-radius: 10px;
+}
+
+.edit-remove-btn-container {
+    display: flex;
+    column-gap: 10px;
+}
+
+.main-todoList button{
+    padding: 5px;
+    width: 100px;
+    background-color: #333333;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.main-todoList button:hover{
+    background-color: #3a004d;
+}
+
+details summary {
+    font-size: 20px;
+    color: #3a004d;
+    font-weight: bold;
+}
+
+details[open] {
+    margin: 10px 0;
+    -webkit-box-shadow: -1px 17px 30px -25px rgba(58, 0, 77, 1);
+    -moz-box-shadow: -1px 17px 30px -25px rgba(58, 0, 77, 1);
+    box-shadow: -1px 17px 30px -25px rgba(58, 0, 77, 1);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+details[open] p {
+    margin-top: 20px;
+    text-align: justify;
+    padding: 15px;
+    line-height: 1.75em;
+    font-style: normal;
+}
+
+.main-footer-container{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+}
+.links-container{
+    display: flex;
+    column-gap: 10px;
+}
+.links-container a{
+    text-decoration: none;
+    color: #3a004d;
+}
+
+
+@media screen and (min-width: 328px) {
+    .main-page-container{
+        grid-template-columns: 80%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 100%;
+    }
+    h1{
+        font-size: 35px;
+    }
+
+}
+
+@media screen and (min-width: 549px) {
+    .main-page-container{
+        grid-template-columns: 80%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 100%;
+    }
+    h1{
+        font-size: 35px;
+    }
+    .links-container{
+        display: flex;
+        column-gap: 10px;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .main-page-container{
+        grid-template-columns: 80%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 50%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .links-container{
+        display: flex;
+        column-gap: 10px;
+    }
+
+}
+
+@media screen and (min-width: 1024px) {
+    .main-page-container{
+        grid-template-columns: 70%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 50%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .links-container{
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main-page-container{
+        grid-template-columns: 60%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 50%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .links-container{
+        display: flex;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    .main-page-container{
+        grid-template-columns: 50%;
+    }
+    .main-date-header-container p{
+        font-size: 15px;
+    }
+    .main-form-container input{
+        width: 50%;
+    }
+    h1{
+        font-size: 45px;
+    }
+    .links-container{
+        display: flex;
+        column-gap: 10px;
+    }
+}
